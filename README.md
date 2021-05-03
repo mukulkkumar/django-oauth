@@ -22,3 +22,18 @@ urlpatterns = [
    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')), 
 ]
 ```
+
+## This repo is also on docker hub, just need to take pull and start the container
+```
+docker pull kumarm5/django_oauth
+```
+
+## start the container in the background
+```
+docker run -d -p 8000:8000 kumarm5/django_oauth
+```
+
+## To check container, just type command
+```
+docker container ls
+```
